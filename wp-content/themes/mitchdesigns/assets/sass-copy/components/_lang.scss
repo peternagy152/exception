@@ -1,0 +1,48 @@
+.popup-lang{
+    .popup__window{
+        max-width: 400px;
+        padding: 20px;
+    }
+}
+.lang-component{
+    h3{
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        margin-bottom: 12px;
+        
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li{
+            border-radius: 4px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 18px 10px;
+            cursor: pointer;
+            position: relative;
+            color: black;
+            width: calc(50% - 5px);
+            text-align: center;
+            @include transition (all, 0.2s, ease);
+            &~label{
+                margin-#{$end}: 10px;
+            }
+            a{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: inherit;
+            }
+
+            &.active,&:hover{
+                background-color: red;                           
+                // color: $DarkGreen;
+            }
+        }
+    }
+}

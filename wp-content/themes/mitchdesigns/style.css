@@ -1,0 +1,101 @@
+/*
+Theme Name:   	MitchDesigns Theme
+Theme URI:    	https://www.mitchdesigns.com
+Author:       	MitchDesigns
+Author URI:     https://www.mitchdesigns.com
+Description:  	This is a theme for  Mitchdesigns 
+Version:      	1.0.0
+Text Domain:  	mitchdesigns
+*/
+/*
+ * Add your own custom css below this text.
+*/
+/* .page_customize .step.active.four .header_customize .breadcramb li:nth-child(3) .min_box::before  */
+
+.product_container .products_list .product_widget .product_widget_box::before{display: none;}
+
+.page_wishlist .list_content .wishlist .product_container .products_list .product_widget .wishlist_remove {
+  font-size: 13px;
+  position: absolute;
+  color: #000104;
+  top: 10px;
+  left: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.alert-danger{
+  padding: 14px;
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 23px;
+}
+.alert-success {
+  padding: 14px;
+  background: #d4edda;
+  color: #222;
+  font-size: 15px;
+}
+.custom_cart_data img{margin: 15px 0px;}
+.text_area{font-size: 15px;padding: 5px;}
+#password_fields{display: none;}
+.woocommerce-Price-amount.amount{color: #fff;}
+img.avatar{border-radius: 50%;}
+/* .page_myaccount .grid .page_content .dashbord .table_order table tr td.table_action a{width: 48%;}
+.page_myaccount .grid .page_content .dashbord .table_order table tr td.table_action .show {width: 100%;} */
+.address.all h5{
+  clear: both;
+  overflow: hidden;
+}
+.pull-left{float: left;}
+#swal2-html-container .button.wc-forward{display: none;}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+.page_customize .emty img{display: none;}
+.page_customize .header_customize .min_box.done::before{display: none !important; content: '';}
+.page_home .video-box .bg .player::before {background-image: url(<?php echo $theme_settings['theme_url'].'/assets/img/icons/play-icon.png';?>);}
+.ar-phone-dir{
+  display: block;
+  direction: ltr;
+}
+
+/* .section_contact_us .sec_form .btn{
+  background: #ab9058;
+  border-radius: 2px;
+  width: 100%;
+  padding: 6px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .3s ease;
+} */
+.caldera-grid .alert-success {font-size: 16px;}
+.caldera-grid .form-group, .cf-color-picker .form-group {margin-bottom: 0 !important;}
+.ajax_alerts{display:none;}
+.ajax_alerts .alert{margin-bottom: 5px;}
+.reviews-img-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.remove_border_on_first_load .woocommerce-invalid .input-text,
+.remove_border_on_first_load .woocommerce-invalid select,
+/* .remove_border_on_first_load select{border: 1px solid #6c757d !important; border-color: unset !important;} */
+.wc_payment_method.payment_method_wallet bdi, .mount bdi, .customer-wallet-balance bdi{color: #222; padding-left: 5px;}
+@media(min-width:992px){
+  .caldera-grid .col-md-6{width: 50% !important; padding-left: 0px !important;}
+}
+@media(max-width:768px){
+  .caldera-grid .col-md-6{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+.footer_baner{display: none;}
+/* .thanks_page .left .title {font-size: 26px;} */

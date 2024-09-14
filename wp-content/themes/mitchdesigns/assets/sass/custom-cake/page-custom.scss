@@ -1,0 +1,1063 @@
+.page_custom{
+    footer{
+        .section_footer_mobile{
+            .top{
+                .section_middle{
+                    display: none !important;
+                }
+                .section_end{
+                    .menu{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .section_whatsapp{
+        @media screen and (max-width: 767px){
+            display: none !important;
+        }
+    }
+}
+.page_custom_cake{
+    padding: 50px 0;
+    @media screen and (max-width: 767px){
+       padding: 25px 0 0;
+    }
+    .all_step{
+        padding: 50px 0;
+        @media screen and (max-width: 767px){
+            padding: 25px 0;
+         }
+        .grid{
+            max-width: 1020px;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            @media screen and (max-width: 767px){
+               flex-direction: column;
+               margin: 0 -15px;
+             }
+            .section_image{
+                width: 55%;
+                max-height: 450px;
+                position: relative;
+                min-height: 450px;
+                // background: #F9F4E8;
+                border-radius: 4px;
+                overflow: hidden;
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                    min-height: auto;
+                    margin: -100px 0;
+                }
+            }
+            .section_data{
+                width: calc(100% - 55%);
+                padding-#{$start}: 35px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                    padding: 25px 15px 0 !important;
+                }
+                .step{
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                }
+                .section_title{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #423C33;
+                    padding-bottom: 10px;
+                    body.ltr & {
+                       font-size: 16px;
+                       padding-bottom: 5px;
+                    }
+                }
+                .sub_title{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #747474;
+                    border-bottom: 1px solid #D9D9D9;
+                    padding-bottom: 15px;
+                    margin-bottom: 20px;
+                    line-height: 22px;
+                }
+                .options{
+                    .s_option{
+                        padding-bottom: 10px;
+                        .option{
+                            display: block;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                            position: relative;
+                           
+                            label {
+                                display: flex;
+                                align-items: center;
+                                color: #000000;
+                                @media screen and (max-width: 767px){
+                                    font-size: 14px;
+                                }
+                                &:hover{
+                                    color: #C6537A;
+                                }
+                                &:before {
+                                    content: "";
+                                    width: 18px;
+                                    height: 18px;
+                                    margin-#{$end}: 10px;
+                                    background-image: url(../img/step-custom/radio-checked.png);
+                                    background-repeat: no-repeat;
+                                    background-size: 18px;
+                                }
+                            }
+                            input {
+                                border: 2px solid $border-color;
+                                width: 100%;
+                                border-radius: 4px;
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                &[type="radio"] {
+                                    height: 100%;
+                                    position: absolute;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                    &:checked ~ label {
+                                        color: #C6537A;
+                                        &::before {
+                                            background-image: url(../img/step-custom/radio.png);
+                                            background-repeat: no-repeat;
+                                            background-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.active{
+                            label{
+                                color: #C6537A;
+                                &::before{
+                                    content: '';
+                                    background-image: url(../img/step-custom/radio.png);
+                                }
+                            }
+                        }
+                        select {
+                            -webkit-appearance: none;
+                            display: block;
+                            background-color: #f6f6f4;
+                            width: 100%;
+                            height: 44px;
+                            line-height: 40px;
+                            font-size: 14px;
+                            color: #000000;
+                            font-weight: 300;
+                            background-image: url(../img/step-custom/select-arrow.png);
+                            background-repeat: no-repeat;
+                            background-position: 2% 50%;
+                            padding: 0 12px;
+                            cursor: pointer;
+                            border: 2px solid #d9d9d9 !important;
+                            border-radius: 4px;
+                            text-transform: capitalize;
+                            body.ltr & {
+                                background-position: 96% 50% !important;
+                            }
+                        }
+                        .half_select{
+                            width: 50% !important;
+                            background-position: 5% 50% !important;
+                        }
+                        .select-dropdown{
+                            margin-top: 20px;
+                            border: 2px solid #d9d9d9;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            .section_selected{
+                                .selected{
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 10px;
+                                    padding: 10px 20px;
+                                    background-image: url("../img/icons/select-arrow.png");
+                                    background-repeat: no-repeat;
+                                    background-position: calc(100% - 95%) center;
+                                    background-size: 20px;
+                                    @media screen and (max-width: 770px) {
+                                      background-size: 14px;
+                                    }
+                                    img{
+                                        border-radius: 50px;
+                                        border: 2px solid #d9d9d9;
+                                        padding: 2px;
+                                    }
+                                }
+                                &.active{
+                                    border-bottom: 2px solid #d9d9d9;
+                                    .selected{
+                                        
+                                    }
+                                }
+                            }
+                            .all_select{
+                                display: none;
+                                .s_select{
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 10px;
+                                    padding: 15px 0;
+                                    padding-#{$start}: 20px;
+                                    cursor: pointer;
+                                    img{
+                                        border-radius: 50px;
+                                        border: 2px solid #d9d9d9;
+                                        padding: 2px;
+                                    }
+                                    .value_name{
+                                        position: relative;
+                                        width: 85%;
+                                        span{
+                                            display: block;
+                                            font-size: 12px;
+                                            font-weight: 400;
+                                            color: #A3A3A3;
+                                            padding-top: 4px;
+                                            line-height: 20px;
+                                        }
+                                        &::after{
+                                            content: '';
+                                            width: 100%;
+                                            height: 1px;
+                                            background: #d9d9d98a;
+                                            position: absolute;
+                                            #{$end}: 0;
+                                            bottom: -20px;
+                                            @media screen and (max-width: 767px){
+                                                width: 88%;
+                                                #{$start}: 0;
+                                                margin: auto;
+                                            }
+                                        }
+                                    }
+                                    &:hover{
+                                        background: #F6F6F6;
+                                        .check{
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                                &.active{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    &.color_and_toping_option{
+                        @media screen and (max-width: 770px) {
+                            padding-top: 20px;
+                        }
+                        .nav{
+                            display: flex;
+                            flex-direction: row;
+                            li{
+                                width: 50%;
+                                .s_btn{
+                                    width: 100%;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    color: #727272;
+                                    border-bottom: 2px solid #D9D9D9;
+                                    padding-bottom: 25px;
+                                    @media screen and (max-width: 770px) {
+                                        font-size: 16px;
+                                        padding-bottom: 15px;
+                                    }
+                                    &.active{
+                                        border-bottom: 2px solid #C6537A;
+                                        color: #423C33;
+                                    }
+                                }
+                            }
+                        }
+                        .content{
+                            display: none;
+                            padding-top: 25px;
+                            &.active{
+                                display: block;
+                            }
+                            &.c_option1{
+                                #color_option{
+                                    max-width: 300px;
+                                }
+                                .options{
+                                    display: flex;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    margin: 0 -5px;
+                                    .s_option{
+                                        position: relative;
+                                        width: calc(100% / 7);
+                                        margin-bottom: 20px;
+                                        padding-bottom: 0;
+                                        input{
+                                            &[type="radio"] {
+                                                height: 100%;
+                                                position: absolute;
+                                                opacity: 0;
+                                                cursor: pointer;
+                                                left: 0;
+                                                right: 0;
+                                                top: 0;
+                                                bottom: 0;
+                                                z-index: 9;
+                                                &:checked ~ label {
+                                                    &::before {
+                                                        border: 2px solid #60A39B;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        label{
+                                            border-radius: 50%;
+                                            width: 30px;
+                                            height: 30px;
+                                            font-size: 0;
+                                            position: relative;
+                                            margin: auto;
+                                            &::before{
+                                                content: '';
+                                                background-image: none;
+                                                border: 2px solid #D9D9D9;
+                                                position: absolute;
+                                                border-radius: 50%;
+                                                width: 34px;
+                                                height: 34px;
+                                                #{$start}: -4px;
+                                                top: -4px;
+                                            }
+                                        }
+                                        // &:nth-child(2){
+                                        //     display: none !important;
+                                        //     label{
+                                        //         // background-color: black !important;
+
+                                        //     }
+                                        // }
+                                        // &:nth-child(3){
+                                        //     label{
+                                        //         background-color: #e5bdd4 !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(4){
+                                        //     label{
+                                        //         background-color: #e57cbb !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(5){
+                                        //     label{
+                                        //         background-color: #b8d697 !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(6){
+                                        //     label{
+                                        //         background-color: #d2b87c !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(7){
+                                        //     label{
+                                        //         background-color: #e5d17f !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(8){
+                                        //     label{
+                                        //         background-color: #a47cbf !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(9){
+                                        //     display: none !important;
+                                        //     label{
+                                        //         // background-color: #d3e3e4 !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(10){
+                                        //     label{
+                                        //         background-color: #6fa5cf !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(11){
+                                        //     label{
+                                        //         background-color: #d5d6bf !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(12){
+                                        //     label{
+                                        //         background-color: #dacd7f !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(13){
+                                        //     label{
+                                        //         background-color: #e6e589 !important;
+                                        //     }
+                                        // }
+                                        // &:nth-child(14){
+                                        //     display: none !important;
+                                        //     label{
+                                        //         // background-color: #e5e5e5 !important;
+                                        //     }
+                                        // }
+
+
+                                    }
+                                }
+                                .min_icons{
+                                    width: fit-content;
+                                    display: block;
+                                    margin-top: 20px;
+                                    .section_click{
+                                        background: black;
+                                        border-radius: 50px;
+                                        padding: 10px 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 10px;
+                                        p{
+                                            font-size: 12px;
+                                            color: white;
+                                        }
+                                        .plus{
+                                            &::before{
+                                                content: '';
+                                                background-image: url(../img/step-custom/plus.png);
+
+                                                background-repeat: no-repeat;
+                                                width: 12px;
+                                                height: 12px;
+                                                background-size: 12px;
+                                                display: inline-block;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .list_icons{
+                                    display: flex;
+                                    column-gap: 25px;
+                                    padding: 25px 0;
+                                    @media screen and (max-width: 767px){
+                                       column-gap: 10px;
+                                      }
+                                    .min_widget{
+                                        position: relative;
+                                        .widget_img{
+                                            border: 2px solid #C6537A;
+                                            border-radius: 6px;
+                                            max-width: 90px;
+                                            max-height: 90px;
+                                            min-width: 90px;
+                                            min-height: 90px;
+                                            position: relative;
+                                            // background: #b1ded9;
+                                            @media screen and (max-width: 767px){
+                                                max-width: 60px;
+                                                max-height: 60px;
+                                                min-width: 60px;
+                                                min-height: 60px;
+                                              }
+                                            img{
+                                                position: absolute;
+                                                top: 0;
+                                                bottom: 0;
+                                                left: 0;
+                                                right: 0;
+                                                margin: auto;
+                                            }
+                                            .border_done {
+                                                width: 12px;
+                                                height: 12px;
+                                                border-radius: 50%;
+                                                background-color: #C6537A;
+                                                position: absolute;
+                                                top: 3px;
+                                                #{$start}: 3px;
+                                                i {
+                                                    font-size: 10px;
+                                                    color: white;
+                                                    font-weight: bold;
+                                                    position: absolute;
+                                                    top: 1px;
+                                                    width: 11px;
+                                                }
+                                            }
+                                        }
+                                        .widget_title{
+                                            padding-top: 15px;
+                                            h4{
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                            }
+                                            p{
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                padding-top: 10px;
+                                                color: #505050;
+                                            }
+                                        }
+                                        .remoe{
+                                            position: absolute;
+                                            top: -5px;
+                                            left: -6px;
+                                            button{
+                                                background: black;
+                                                border-radius: 50%;
+                                                width: 20px;
+                                                height: 20px;
+                                                i{
+                                                    color: white;
+                                                    font-size: 17px;
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                        // &:nth-child(1){
+                                        //     .widget_img{
+                                        //         background: #172B85;
+                                        //     }
+                                        // }
+                                        // &:nth-child(2){
+                                        //     .widget_img{
+                                        //         background: #FFF200;
+                                        //     }
+                                        // }
+                                        // &:nth-child(3){
+                                        //     .widget_img{
+                                        //         background: #ED1C24;
+                                        //     }
+                                        // }
+                                    }
+                                }
+                                .popup.cutouts{
+                                    max-width: 500px;
+                                    height: fit-content;
+                                    top: 100px;
+                                    margin: auto;
+                                    background: white;
+                                    padding: 0;
+                                    z-index: 9999;
+                                    @media (max-width: 767px) {
+                                      top: auto;
+                                      max-width: 100%;
+                                      transform: translateY(100%) !important;
+                                      transition: 0.3s all ease-out;
+                                      &.popup_visible{
+                                        transform: translateY(0) !important;
+                                        border-radius: 30px 30px 0 0;
+                                      }
+                                    }
+                                    .select_cutouts {
+                                       
+                                        .top{
+                                          display: flex;
+                                          align-items: center;
+                                          justify-content: space-between;
+                                          border-bottom: 1px solid #d9d9d9;
+                                          padding: 20px 25px;
+                                          h3{
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                            line-height: 28px;
+                                            span{
+                                                display: block;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                color: #979797;
+                                            }
+                                          }
+                                          .popup__close{
+                                            position: relative !important;
+                                            top: 0;
+                                            right: 0;
+                                            font-size: 24px !important;
+                                          }
+                                        }
+                                    
+                                        .section_content {
+                                            background: white;
+                                            .all_widget{
+                                                overflow: scroll;
+                                                max-height: 350px;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                // column-gap: 10px;
+                                                padding: 0px 15px;
+                                                // @media (max-width: 767px) {
+                                                //     justify-content: center;
+                                                //     overflow: hidden;
+                                                // }
+                                                .min_widget{
+                                                    position: relative;
+                                                    padding: 15px 0;
+                                                    cursor: pointer;
+                                                    width: calc(100% / 3);
+                                                    .widget_img{
+                                                        border-radius: 6px;
+                                                        max-width: 150px;
+                                                        max-height: 150px;
+                                                        min-width: 150px;
+                                                        min-height: 150px;
+                                                        position: relative;
+                                                        transition: transform 0.3s ease;
+                                                        // background: #b1ded9;
+                                                        border: 2px solid transparent;
+                                                        @media (max-width: 767px) {
+                                                            max-width: 100px;
+                                                            max-height: 100px;
+                                                            min-width: 100px;
+                                                            min-height: 100px;
+                                                        }
+                                                        img{
+                                                            position: absolute;
+                                                            top: 0;
+                                                            bottom: 0;
+                                                            left: 0;
+                                                            right: 0;
+                                                            margin: auto;
+                                                        }
+                                                        .border_done {
+                                                            width: 20px;
+                                                            height: 20px;
+                                                            border-radius: 4px;
+                                                            background-color: white;
+                                                            border: 1px solid #919191;
+                                                            position: absolute;
+                                                            top: 5px;
+                                                            #{$start}: 5px;
+                                                            i {
+                                                                font-size: 14px;
+                                                                color: white;
+                                                                font-weight: bold;
+                                                                position: absolute;
+                                                                top: 1px;
+                                                                width: 16px;
+                                                                opacity: 0;
+                                                            }
+                                                        }
+                                                    }
+                                                    .widget_title{
+                                                        padding-top: 15px;
+                                                        h4{
+                                                            font-size: 14px;
+                                                            font-weight: 700;
+                                                        }
+                                                        p{
+                                                            font-size: 14px;
+                                                            font-weight: 500;
+                                                            padding-top: 10px;
+                                                            color: #505050;
+                                                        }
+                                                    }
+                                                    &.active{
+                                                        .widget_img{
+                                                            border: 2px solid #C6537A;
+                                                            .border_done{
+                                                                background: #C6537A;
+                                                                border: 1px solid #C6537A;
+                                                                i{
+                                                                    opacity: 1;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    &:hover{
+                                                        .widget_img{
+                                                            border: 2px solid #C6537A;
+                                                            // .border_done{
+                                                            //     background: #C6537A;
+                                                            //     border: 1px solid #C6537A;
+                                                            //     i{
+                                                            //         opacity: 1;
+                                                            //     }
+                                                            // }
+                                                        }
+                                                    }
+                                                    &.disable{
+                                                        pointer-events: none;
+                                                        opacity: .4;
+                                                    }
+                                                    // &:nth-child(1){
+                                                    //     .widget_img{
+                                                    //         background: #172B85;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(2){
+                                                    //     .widget_img{
+                                                    //         background: #FFF200;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(3){
+                                                    //     .widget_img{
+                                                    //         background: #ED1C24;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(4){
+                                                    //     .widget_img{
+                                                    //         background: #ED1C24;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(5){
+                                                    //     .widget_img{
+                                                    //         background: #172B85;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(6){
+                                                    //     .widget_img{
+                                                            
+                                                    //         background: #FFF200;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(7){
+                                                    //     .widget_img{
+                                                    //         background: #FFF200;
+                                                    //     }
+                                                    // }
+                                                    // &:nth-child(8){
+                                                    //     .widget_img{
+                                                    //         background: #ED1C24;
+                                                    //     }
+                                                    // }
+                                                   
+                                                }
+                                                
+                                            }
+                                            .bottom{
+                                                padding: 25px;
+                                                .btn_add{
+                                                    width: 100%;
+                                                    display: block;
+                                                    border-radius: 50px;
+                                                    padding: 12px;
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    text-align: center;
+                                                    transition: all 0.3s ease;
+                                                    background: #B0DED9;
+                                                    cursor: pointer;
+                                                    &:hover {
+                                                        background: #9ecdc8;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+
+                            }
+                            &.c_option2{
+                                select {
+                                    -webkit-appearance: none;
+                                    display: block;
+                                    background-color: #f6f6f4;
+                                    width: 100%;
+                                    height: 44px;
+                                    line-height: 40px;
+                                    font-size: 14px;
+                                    color: #000000;
+                                    font-weight: 300;
+                                    background-image: url(../img/step-custom/select-arrow.png);
+                                    background-repeat: no-repeat;
+                                    background-position: 2% 50%;
+                                    padding: 0 12px;
+                                    cursor: pointer;
+                                    border: 2px solid #d9d9d9 !important;
+                                    border-radius: 4px;
+                                    text-transform: capitalize;
+                                    body.ltr & {
+                                        background-position: 96% 50%;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .box_details{
+                    background:  #F6F6F6;
+                    border: 2px solid #D9D9D9;
+                    .title_details{
+                        padding: 20px;
+                        border-bottom: 2px solid #D9D9D9;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    .all_details{
+                        padding: 20px;
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 20px;
+                            .title{
+                                display: flex;
+                                align-items: center;
+                                column-gap: 15px;
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: #6C757D;
+                                @media screen and (max-width: 770px){
+                                  font-size: 12px;
+                                }
+                                .details{
+                                    color: black;
+                                }
+                            }
+                            .price{
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #505050;
+                                @media screen and (max-width: 770px){
+                                    font-size: 12px;
+                                  }
+                            }
+                            &:last-child{
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .box_note{
+                    padding: 20px 0;
+                    h3{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 28px;
+                        color: #423C33;
+                        padding-bottom: 5px;
+                    }
+                    .textarea{
+                        textarea{
+                            width: 100%;
+                            font-size: 16px;
+                            resize: none;
+                            padding: 15px !important;
+                            border: 0;
+                            border-radius: 4px;
+                            border: 2px solid #D9D9D9;
+                        }
+                    }
+
+                }
+              
+            }
+            .section_next{
+                // position: absolute;
+                // bottom: 0;
+                // left: 0;
+                // #{$start}: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: 2px solid #e7e7e7;
+                padding-top: 20px;
+                @media screen and (max-width: 767px){
+                    margin: 30px 0 0;
+                }
+                .next{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 15px;
+                    width: calc(100% - 40px);
+                    .btn_next{
+                        color: black;
+                        width: 140px;
+                        display: block;
+                        border-radius: 50px;
+                        padding: 12px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+                        transition: all 0.3s ease;
+                        background: #B0DED9;
+                        cursor: pointer;
+                        @media screen and (max-width: 767px){
+                            width: 60%;
+                            padding: 15px 10px;
+                        }
+                        body.ltr & {
+                            font-size: 16px;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            column-gap: 10px;
+                            @media screen and (max-width: 767px){
+                                font-size: 14px;
+                            }
+                        }
+                        &:hover {
+                            background: #9ecdc8;
+                        }
+                        &::before{
+                            content: '';
+                            background-image: url(../img/step-custom/icon_next_cake.png);
+                            background-repeat: no-repeat;
+                            width: 15px;
+                            height: 15px;
+                            background-size: 15px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-#{$end}: 10px;
+                            body.ltr & {
+                                margin-#{$end}: 0;
+                                // transform: rotate(180deg);
+                            }
+                            @media screen and (max-width: 767px){
+                                width: 12px;
+                                height: 12px;
+                                background-size: 12px;
+                            }
+                        }
+                        &.hidden_next{
+                            pointer-events: none;
+                            opacity: .4;
+                        }
+                        &.hide{
+                            display: none;
+                            body.ltr & {
+                                display: none;
+                            }
+                        }
+                    }
+                    .btn_next_pop{
+                        color: black;
+                        display: none;
+                        width: 140px;
+                        border-radius: 50px;
+                        padding: 12px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+                        transition: all 0.3s ease;
+                        background: #B0DED9;
+                        cursor: pointer;
+                        @media screen and (max-width: 767px){
+                            width: 60%;
+                            padding: 15px 10px;
+                        }
+                        body.ltr & {
+                            font-size: 16px;
+                            display: none;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            column-gap: 10px;
+                            @media screen and (max-width: 767px){
+                                font-size: 14px;
+                            }
+                        }
+                        &:hover {
+                            background: #9ecdc8;
+                        }
+                        &::before{
+                            content: '';
+                            background-image: url(../img/step-custom/icon_next_cake.png);
+                            background-repeat: no-repeat;
+                            width: 15px;
+                            height: 15px;
+                            background-size: 15px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-#{$end}: 10px;
+                            body.ltr & {
+                                margin-#{$end}: 0;
+                                // transform: rotate(180deg);
+                            }
+                            @media screen and (max-width: 767px){
+                                width: 12px;
+                                height: 12px;
+                                background-size: 12px;
+                            }
+                        }
+                        &.show{
+                            display: block;
+                            body.ltr & {
+                                display: flex;
+                            }
+                        }
+                    }
+                    .price{
+                        // display: none;
+                        // &.show{
+                        //     display: block;
+                        // }
+                        h6{
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #6C757D;
+                            padding-bottom: 10px;
+                        }
+                        p{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #C6537A;
+                            display: inline-block;
+                           
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #C6537A;
+                        }
+                    }
+                }
+                .prev{
+                    .btn_prev{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        background: #F6F6F4;
+                        @media screen and (max-width: 767px){
+                            width: 40px;
+                            height: 40px;
+                        }
+                        &:hover{
+                            background: #F6F6F4;
+                        }
+                        &::before{
+                            content: '';
+                            background-image: url(../img/step-custom/icon_preview_cake.png);
+                            background-repeat: no-repeat;
+                            width: 25px;
+                            height: 15px;
+                            background-size: 15px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            // margin-#{$end}: 10px;
+                             margin-left: 10px;
+                            // body.ltr & {
+                            //     transform: rotate(180deg);
+                            // }
+                            @media screen and (max-width: 767px){
+                                background-size: 13px;
+                            }
+                        }
+                        &.hidden_prev{
+                           display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    
+}
+

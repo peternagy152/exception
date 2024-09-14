@@ -1,0 +1,262 @@
+// Rectangle
+
+        //White
+            // .sprite.1-rectangle_white_babyblue { background-position: 0 0; } 
+            // .sprite.1-rectangle_white_black { background-position: -600px 0; } 
+            // .sprite.1-rectangle_white_blue { background-position: -1200px 0; } 
+            // .sprite.1-rectangle_white_brown { background-position: -1800px 0; } 
+            // .sprite.1-rectangle_white_foshya { background-position: -2400px 0; } 
+            // .sprite.1-rectangle_white_golden { background-position: -3000px 0; } 
+            // .sprite.1-rectangle_white_green { background-position: -3600px 0; } 
+            // .sprite.1-rectangle_white_orange { background-position: -4200px 0; } 
+            // .sprite.1-rectangle_white_pink { background-position: -4800px 0; } 
+            // .sprite.1-rectangle_white_purple { background-position: -5400px 0; } 
+            // .sprite.1-rectangle_white_red { background-position: -6000px 0; width: 498px; } 
+            // .sprite.1-rectangle_white_silver { background-position: -6598px 0; } 
+            // .sprite.1-rectangle_white_white { background-position: -7198px 0; } 
+            // .sprite.1-rectangle_white_yellow { background-position: -7798px 0; } 
+            // .sprite.1-rectangle_white_1 { background-position: -8398px 0; } 
+            // .sprite.1-rectangle_white_2 { background-position: -8998px 0; } 
+            // .sprite.1-rectangle_white_3 { background-position: -9598px 0; } 
+            // .sprite.1-rectangle_white_4 { background-position: -10198px 0; } 
+            // .sprite.1-rectangle_white_6 { background-position: -10798px 0; } 
+            // .sprite.1-rectangle_white_8 { background-position: -11398px 0; } 
+            // .sprite.1-rectangle_white_7 { background-position: -11998px 0; } 
+            // .sprite.1-rectangle_white_9 { background-position: -12598px 0; } 
+            // .sprite.1-rectangle_white_5 { background-position: -13198px 0; } 
+
+
+        //Black
+            // .sprite.2-rectangle_black_babyblue { background-position: 0 0; } 
+            // .sprite.2-rectangle_black_black { background-position: -600px 0; } 
+            // .sprite.2-rectangle_black_blue { background-position: -1200px 0; } 
+            // .sprite.2-rectangle_black_brown { background-position: -1800px 0; } 
+            // .sprite.2-rectangle_black_foshya { background-position: -2400px 0; } 
+            // .sprite.2-rectangle_black_golden { background-position: -3000px 0; } 
+            // .sprite.2-rectangle_black_green { background-position: -3600px 0; } 
+            // .sprite.2-rectangle_black_orange { background-position: -4200px 0; } 
+            // .sprite.2-rectangle_black_pink { background-position: -4800px 0; } 
+            // .sprite.2-rectangle_black_purple { background-position: -5400px 0; } 
+            // .sprite.2-rectangle_black_red { background-position: -6000px 0; width: 498px; } 
+            // .sprite.2-rectangle_black_silver { background-position: -6598px 0; } 
+            // .sprite.2-rectangle_black_white { background-position: -7198px 0; } 
+            // .sprite.2-rectangle_black_yellow { background-position: -7798px 0; } 
+            // .sprite.2-rectangle_black_1 { background-position: -8398px 0; } 
+            // .sprite.2-rectangle_black_2 { background-position: -8998px 0; } 
+            // .sprite.2-rectangle_black_3 { background-position: -9598px 0; } 
+            // .sprite.2-rectangle_black_4 { background-position: -10198px 0; } 
+            // .sprite.2-rectangle_black_5 { background-position: -10798px 0; } 
+            // .sprite.2-rectangle_black_6 { background-position: -11398px 0; } 
+            // .sprite.2-rectangle_black_7 { background-position: -11998px 0; } 
+            // .sprite.2-rectangle_black_8 { background-position: -12598px 0; } 
+            // .sprite.2-rectangle_black_9 { background-position: -13198px 0; } 
+
+
+
+        // Black-White
+            // .sprite.3-rectangle_black-white_babyblue { background-position: 0 0; } 
+            // .sprite.3-rectangle_black-white_black { background-position: -600px 0; } 
+            // .sprite.3-rectangle_black-white_blue { background-position: -1200px 0; } 
+            // .sprite.3-rectangle_black-white_brown { background-position: -1800px 0; } 
+            // .sprite.3-rectangle_black-white_foshya { background-position: -2400px 0; } 
+            // .sprite.3-rectangle_black-white_golden { background-position: -3000px 0; } 
+            // .sprite.3-rectangle_black-white_green { background-position: -3600px 0; } 
+            // .sprite.3-rectangle_black-white_orange { background-position: -4200px 0; } 
+            // .sprite.3-rectangle_black-white_pink { background-position: -4800px 0; } 
+            // .sprite.3-rectangle_black-white_purple { background-position: -5400px 0; } 
+            // .sprite.3-rectangle_black-white_red { background-position: -6000px 0; width: 498px; } 
+            // .sprite.3-rectangle_black-white_silver { background-position: -6598px 0; } 
+            // .sprite.3-rectangle_black-white_white { background-position: -7198px 0; } 
+            // .sprite.3-rectangle_black-white_yellow { background-position: -7798px 0; } 
+            // .sprite.3-rectangle_black-white_1 { background-position: -8398px 0; } 
+            // .sprite.3-rectangle_black-white_2 { background-position: -8998px 0; } 
+            // .sprite.3-rectangle_black-white_3 { background-position: -9598px 0; } 
+            // .sprite.3-rectangle_black-white_4 { background-position: -10198px 0; } 
+            // .sprite.3-rectangle_black-white_5 { background-position: -10798px 0; } 
+            // .sprite.3-rectangle_black-white_6 { background-position: -11398px 0; } 
+            // .sprite.3-rectangle_black-white_7 { background-position: -11998px 0; } 
+            // .sprite.3-rectangle_black-white_8 { background-position: -12598px 0; } 
+            // .sprite.3-rectangle_black-white_9 { background-position: -13198px 0; } 
+
+
+
+
+
+
+// Circle
+
+        //White
+            // .sprite.1-circle_white_babyblue { background-position: 0 0; } 
+            // .sprite.1-circle_white_black { background-position: -600px 0; } 
+            // .sprite.1-circle_white_blue { background-position: -1200px 0; } 
+            // .sprite.1-circle_white_brown { background-position: -1800px 0; } 
+            // .sprite.1-circle_white_foshya { background-position: -2400px 0; } 
+            // .sprite.1-circle_white_golden { background-position: -3000px 0; } 
+            // .sprite.1-circle_white_green { background-position: -3600px 0; } 
+            // .sprite.1-circle_white_orange { background-position: -4200px 0; } 
+            // .sprite.1-circle_white_pink { background-position: -4800px 0; } 
+            // .sprite.1-circle_white_purple { background-position: -5400px 0; } 
+            // .sprite.1-circle_white_red { background-position: -6000px 0; width: 494px; } 
+            // .sprite.1-circle_white_silver { background-position: -6594px 0; } 
+            // .sprite.1-circle_white_white { background-position: -7194px 0; } 
+            // .sprite.1-circle_white_yellow { background-position: -7794px 0; } 
+            // .sprite.1-circle_white_1 { background-position: -8394px 0; height: 284px; } 
+            // .sprite.1-circle_white_2 { background-position: -8994px 0; height: 284px; } 
+            // .sprite.1-circle_white_3 { background-position: -9594px 0; height: 284px; } 
+            // .sprite.1-circle_white_4 { background-position: -10194px 0; height: 284px; } 
+            // .sprite.1-circle_white_5 { background-position: -10794px 0; height: 284px; } 
+            // .sprite.1-circle_white_6 { background-position: -11394px 0; height: 284px; } 
+            // .sprite.1-circle_white_7 { background-position: -11994px 0; height: 284px; } 
+            // .sprite.1-circle_white_8 { background-position: -12594px 0; height: 284px; } 
+            // .sprite.1-circle_white_9 { background-position: -13194px 0; height: 284px; } 
+
+
+
+        //Black
+
+            // .sprite.2-circle_black_babyblue { background-position: 0 0; } 
+            // .sprite.2-circle_black_black { background-position: -600px 0; } 
+            // .sprite.2-circle_black_blue { background-position: -1200px 0; } 
+            // .sprite.2-circle_black_brown { background-position: -1800px 0; } 
+            // .sprite.2-circle_black_foshya { background-position: -2400px 0; } 
+            // .sprite.2-circle_black_golden { background-position: -3000px 0; } 
+            // .sprite.2-circle_black_green { background-position: -3600px 0; } 
+            // .sprite.2-circle_black_orange { background-position: -4200px 0; } 
+            // .sprite.2-circle_black_pink { background-position: -4800px 0; } 
+            // .sprite.2-circle_black_purple { background-position: -5400px 0; } 
+            // .sprite.2-circle_black_red { background-position: -6000px 0; width: 494px; } 
+            // .sprite.2-circle_black_silver { background-position: -6594px 0; } 
+            // .sprite.2-circle_black_white { background-position: -7194px 0; } 
+            // .sprite.2-circle_black_yellow { background-position: -7794px 0; } 
+            // .sprite.2-circle_black_1 { background-position: -8394px 0; height: 284px; } 
+            // .sprite.2-circle_black_2 { background-position: -8994px 0; height: 284px; } 
+            // .sprite.2-circle_black_3 { background-position: -9594px 0; height: 284px; } 
+            // .sprite.2-circle_black_4 { background-position: -10194px 0; height: 284px; } 
+            // .sprite.2-circle_black_5 { background-position: -10794px 0; height: 284px; } 
+            // .sprite.2-circle_black_6 { background-position: -11394px 0; height: 284px; } 
+            // .sprite.2-circle_black_7 { background-position: -11994px 0; height: 284px; } 
+            // .sprite.2-circle_black_8 { background-position: -12594px 0; height: 284px; } 
+            // .sprite.2-circle_black_9 { background-position: -13194px 0; height: 284px; } 
+
+        //Black-white 
+            // .sprite.3-circle_black-white_babyblue { background-position: 0 0; } 
+            // .sprite.3-circle_black-white_black { background-position: -600px 0; } 
+            // .sprite.3-circle_black-white_blue { background-position: -1200px 0; } 
+            // .sprite.3-circle_black-white_brown { background-position: -1800px 0; } 
+            // .sprite.3-circle_black-white_foshya { background-position: -2400px 0; } 
+            // .sprite.3-circle_black-white_golden { background-position: -3000px 0; } 
+            // .sprite.3-circle_black-white_green { background-position: -3600px 0; } 
+            // .sprite.3-circle_black-white_orange { background-position: -4200px 0; } 
+            // .sprite.3-circle_black-white_pink { background-position: -4800px 0; } 
+            // .sprite.3-circle_black-white_purple { background-position: -5400px 0; } 
+            // .sprite.3-circle_black-white_red { background-position: -6000px 0; width: 494px; } 
+            // .sprite.3-circle_black-white_silver { background-position: -6594px 0; } 
+            // .sprite.3-circle_black-white_white { background-position: -7194px 0; } 
+            // .sprite.3-circle_black-white_yellow { background-position: -7794px 0; } 
+            // .sprite.3-circle_black-white_1 { background-position: -8394px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_2 { background-position: -8994px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_3 { background-position: -9594px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_4 { background-position: -10194px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_5 { background-position: -10794px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_6 { background-position: -11394px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_7 { background-position: -11994px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_8 { background-position: -12594px 0; height: 284px; } 
+            // .sprite.3-circle_black-white_9 { background-position: -13194px 0; height: 284px; }             
+
+
+
+// Square
+
+        //White
+            // .sprite.1-square_white_babyblue { background-position: 0 0; } 
+            // .sprite.1-square_white_black { background-position: -599px 0; } 
+            // .sprite.1-square_white_blue { background-position: -1198px 0; } 
+            // .sprite.1-square_white_brown { background-position: -1797px 0; } 
+            // .sprite.1-square_white_foshya { background-position: -2396px 0; } 
+            // .sprite.1-square_white_golden { background-position: -2995px 0; } 
+            // .sprite.1-square_white_green { background-position: -3594px 0; } 
+            // .sprite.1-square_white_orange { background-position: -4193px 0; } 
+            // .sprite.1-square_white_pink { background-position: -4792px 0; } 
+            // .sprite.1-square_white_purple { background-position: -5391px 0; } 
+            // .sprite.1-square_white_red { background-position: -5990px 0; } 
+            // .sprite.1-square_white_silver { background-position: -6589px 0; } 
+            // .sprite.1-square_white_white { background-position: -7188px 0; } 
+            // .sprite.1-square_white_yellow { background-position: -7787px 0; } 
+            // .sprite.1-square_white_1 { background-position: -8386px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_2 { background-position: -8986px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_3 { background-position: -9586px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_4 { background-position: -10186px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_5 { background-position: -10786px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_6 { background-position: -11386px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_7 { background-position: -11986px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_8 { background-position: -12586px 0; width: 500px; height: 284px; } 
+            // .sprite.1-square_white_9 { background-position: -13186px 0; width: 500px; height: 284px; } 
+
+
+
+        //Black
+
+            // .sprite.2-square_black_babyblue { background-position: 0 0; } 
+            // .sprite.2-square_black_black { background-position: -599px 0; } 
+            // .sprite.2-square_black_blue { background-position: -1198px 0; } 
+            // .sprite.2-square_black_brown { background-position: -1797px 0; } 
+            // .sprite.2-square_black_foshya { background-position: -2396px 0; } 
+            // .sprite.2-square_black_golden { background-position: -2995px 0; } 
+            // .sprite.2-square_black_green { background-position: -3594px 0; } 
+            // .sprite.2-square_black_orange { background-position: -4193px 0; } 
+            // .sprite.2-square_black_pink { background-position: -4792px 0; } 
+            // .sprite.2-square_black_purple { background-position: -5391px 0; } 
+            // .sprite.2-square_black_red { background-position: -5990px 0; } 
+            // .sprite.2-square_black_silver { background-position: -6589px 0; } 
+            // .sprite.2-square_black_white { background-position: -7188px 0; } 
+            // .sprite.2-square_black_yellow { background-position: -7787px 0; } 
+            // .sprite.2-square_black_1 { background-position: -8386px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_2 { background-position: -8986px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_3 { background-position: -9586px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_4 { background-position: -10186px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_5 { background-position: -10786px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_7 { background-position: -11386px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_6 { background-position: -11986px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_8 { background-position: -12586px 0; width: 500px; height: 284px; } 
+            // .sprite.2-square_black_9 { background-position: -13186px 0; width: 500px; height: 284px; } 
+
+        //Black-white 
+            // .sprite.3-square_black-white_babyblue { background-position: 0 0; } 
+            // .sprite.3-square_black-white_black { background-position: -599px 0; } 
+            // .sprite.3-square_black-white_blue { background-position: -1198px 0; } 
+            // .sprite.3-square_black-white_brown { background-position: -1797px 0; } 
+            // .sprite.3-square_black-white_foshya { background-position: -2396px 0; } 
+            // .sprite.3-square_black-white_golden { background-position: -2995px 0; } 
+            // .sprite.3-square_black-white_green { background-position: -3594px 0; } 
+            // .sprite.3-square_black-white_orange { background-position: -4193px 0; } 
+            // .sprite.3-square_black-white_pink { background-position: -4792px 0; } 
+            // .sprite.3-square_black-white_purple { background-position: -5391px 0; } 
+            // .sprite.3-square_black-white_red { background-position: -5990px 0; } 
+            // .sprite.3-square_black-white_silver { background-position: -6589px 0; } 
+            // .sprite.3-square_black-white_white { background-position: -7188px 0; } 
+            // .sprite.3-square_black-white_yellow { background-position: -7787px 0; } 
+            // .sprite.3-square_black-white_1 { background-position: -8386px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_2 { background-position: -8986px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_3 { background-position: -9586px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_4 { background-position: -10186px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_5 { background-position: -10786px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_6 { background-position: -11386px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_7 { background-position: -11986px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_8 { background-position: -12586px 0; width: 500px; height: 284px; } 
+            // .sprite.3-square_black-white_9 { background-position: -13186px 0; width: 500px; height: 284px; }          
+
+
+
+
+
+
+// .sprite { background: url('sprite.png') no-repeat top left; width: 13686px; height: 284px;  } 
+// .sprite.Rectangle-white { background-position: 0 0; width: 13698px; } 
+// .sprite.Rectangle-black { background-position: 0 -384px; width: 13698px; } 
+// .sprite.Rectangle-blackwhite { background-position: 0 -768px; width: 13698px; } 
+// .sprite.Square-white { background-position: 0 -1152px; height: 362px; } 
+// .sprite.Square-black { background-position: 0 -1614px; height: 362px; } 
+// .sprite.Square-blackwhite { background-position: 0 -2076px; height: 362px; } 
+// .sprite.circle-white { background-position: 0 -2538px; width: 13694px; height: 361px; } 
+// .sprite.circle-black { background-position: 0 -2999px; width: 13694px; height: 361px; } 
+// .sprite.circle-blackwhite { background-position: 0 -3460px; width: 13694px; height: 361px; } 

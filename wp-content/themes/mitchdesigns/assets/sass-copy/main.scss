@@ -1,0 +1,20 @@
+// sass --watch main.scss:main.css
+// sass --watch main.rtl.scss:main.rtl.css
+// sass --watch main.scss:main.css --style compressed
+// sass --watch main.rtl.scss:main.rtl.css --style compressed
+
+
+// LANG
+@import 'lang/direction-ltr.scss';
+
+
+// IMPORTING INDEX
+@import 'index';
+
+
+
+@media screen and (max-width:767px){}
+@media screen and (max-width:479px){}
+// body.ltr & {
+//     background-position: calc(0% - -15px) center;        
+// }

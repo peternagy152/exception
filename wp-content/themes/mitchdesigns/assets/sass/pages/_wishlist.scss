@@ -1,0 +1,93 @@
+.page_wishlist{
+    padding: 0 20px;
+    @media screen and (max-width:770px) {
+        padding: 0;
+    }
+    .section_title{
+        h2{
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px 30px 30px;
+            position: relative;
+            font-family: 'Vanitas';
+            letter-spacing: 1.4px;
+            @media screen and (max-width:770px) {
+                font-size: 16px;
+            }
+            &::before{
+                content: "favorite_border";
+                @include MaterialFamily;
+                font-size: 24px;
+                font-weight: 100;
+                position: absolute;
+                #{$end}: 0;
+                top: 5px;
+                color: #D3A172;
+            }
+        }
+    }
+    .product_container{
+        .emty_wishlist{
+            position: relative;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f4ed;
+            margin-top: 40px;
+            P{
+                color: #af9854;
+                text-align: center;
+                font-size: 18px;
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+        .products_list{
+            margin: 0 -5px;
+          .product_widget{
+            width: calc(100% / 3);
+            padding: 0 7px 35px;
+            @media screen and (max-width:770px) {
+                width: calc(100% / 2);
+            }
+            @media screen and (max-width:370px) {
+                width: 100%;
+            }
+             .favourite{
+                width: 20px;
+                height: 20px;
+                background: #D3A172;
+                &::before{
+                    content: 'close'; 
+                    #{$start}: 3px;
+                    top: 3px;
+                    font-size: 14px;
+                    color: white;
+                }
+             }
+            .product_widget_box{
+                position: relative;
+                &::before{
+                    display: none;
+                }
+                .text{
+                    .sec_info{
+                        padding-top: 12px;
+                        // .size{
+                        //     .single_size{
+                        //         p{
+                        //             font-size: 12px;
+                        //             padding: 2px 6px;
+                        //             min-width: 33px;
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+            }
+          }
+        }
+    }
+}

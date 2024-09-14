@@ -1,0 +1,158 @@
+.step{
+    &.one{
+        .shape_option{
+            .section_title{
+                padding-bottom: 15px;
+            }
+            .s_option{
+                max-width: 250px;
+                @media screen and (max-width: 767px){
+                   max-width: 100%;
+                }
+                .option{
+                    padding: 24px 14px;
+                    border: 2px solid #D9D9D9;
+                    border-radius: 6px;
+                    @media screen and (max-width: 767px){
+                        padding: 20px 14px;
+                    }
+                    &:hover{
+                        background: #F6F6F4;
+                    }
+                    &.active{
+                            background: #F6F6F4;
+                            label{
+                                color: #C6537A !important;
+                                &::before{
+                                    content: '';
+                                    background-image: url(../img/step-custom/radio.png) !important;
+                                }
+                            }
+                    }
+                }
+               
+            }
+        }
+    }
+    &.two{
+        .size_option{
+            .s_option{
+                padding-bottom: 30px;
+                .hidden_height{
+                    pointer-events: none;
+                    opacity: .4;
+                }
+            }
+            
+        }
+    }
+    &.four{
+        .s_option{
+            .option{
+                label{
+                    font-size: 14px;
+                    padding-bottom: 8px;
+                    &::before{
+                        margin-left: 8px !important;
+                        background-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+    &.six{
+        .options{
+            .s_option.open_write.active ~ .all_notes{
+                display: block;
+            }
+            .s_option{
+                .option{
+                    label{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .all_notes{
+                display: none;
+                border-top: 1px solid #D9D9D9;
+                padding: 30px 0;
+                margin-top: 10px;
+                .single_note{
+                    padding-bottom: 30px;
+                    .sec_top{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 10px;
+                        h6{
+                            font-size: 14px;
+                            position: relative;
+                            input{
+                                cursor: pointer;
+                                &[type="checkbox"] {
+                                    position: absolute;
+                                    height: 100%;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                    &:checked ~ label {
+                                        &::before {
+                                            content: "done";
+                                            background: #47a59b;
+                                            color: white;
+                                            font-family: "Material icons";
+                                            font-size: 14px;
+                                            font-weight: bold;
+                                            line-height: 16px;
+                                            border: 2px solid #47a59b;
+                                        }
+                                    }
+                                }
+                            }
+                            label{
+                                cursor: pointer;
+                                &::before {
+                                    content: "";
+                                    border: 2px solid #D9D9D9;
+                                    width: 15px;
+                                    height: 15px;
+                                    border-radius: 4px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
+                           
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                    .textarea{
+                        textarea{
+                            width: 100%;
+                            font-size: 16px;
+                            resize: none;
+                            padding: 15px !important;
+                            border: 0;
+                            border-radius: 4px;
+                            border: 2px solid #D9D9D9;
+                        }
+                    }
+                   
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                    &.more_text{
+                        .textarea{
+                            display: none;
+                        }
+                        &.active{
+                            .textarea{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
